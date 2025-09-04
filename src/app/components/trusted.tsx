@@ -16,7 +16,7 @@ Since our registration, we have steadily grown in scope and capability. Our team
 
   return (
     <section className="bg-gray-50 py-16 px-6">
-      <div className="max-w-6xl mx-auto bg-white shadow-lg rounded-lg p-8 md:flex md:items-center">
+      <div className="max-w-6xl mx-auto bg-white shadow-lg rounded-lg p-8 md:flex md:items-start">
         
         {/* Left Content */}
         <div className="md:w-2/3">
@@ -28,7 +28,7 @@ Since our registration, we have steadily grown in scope and capability. Our team
 
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="mt-2 text-blue-600 hover:underline cursor-pointer decoration-none"
+            className="mt-2 text-blue-600 hover:underline"
           >
             {isExpanded ? "Read Less" : "Read More"}
           </button>
@@ -42,13 +42,12 @@ Since our registration, we have steadily grown in scope and capability. Our team
         <div className="mt-6 md:mt-0 md:ml-8 md:w-1/3">
           <div className="relative">
             <img 
-              src="/images/julio-jefferson.jpg" 
+              src="/images/ourStory.jpg" 
               alt="Julio Jefferson" 
-              className="w-full h-56 object-cover rounded-md"
+              className={`w-full object-cover rounded-md transition-all duration-500 ${
+                isExpanded ? "h-[32rem]" : "h-56"
+              }`}
             />
-            <p className="absolute bottom-2 left-2 text-white text-sm">
-              Julio Jefferson
-            </p>
           </div>
         </div>
       </div>

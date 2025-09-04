@@ -42,17 +42,45 @@ const AttorneysSection = () => (
   <section className="py-16 bg-gray-50 text-center">
     <h2 className="text-2xl font-bold text-gray-800">Our Attorneys</h2>
     <p className="text-gray-600 mt-2">Meet our experienced and dedicated legal team.</p>
+    
     <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
-      {["Jackson Rowe", "Stephanie Reily", "Matthew Wells"].map((name, idx) => (
-        <div key={idx} className="bg-white shadow-md rounded-lg p-6">
-          <div className="h-48 bg-gray-200 rounded mb-4"></div>
-          <h3 className="font-semibold text-lg">{name}</h3>
-          <p className="text-sm text-gray-500">Senior Attorney</p>
+      {[
+        { 
+          name: "Ijaiya", 
+          role: "Senior Attorney", 
+          image: "/images/ijaiya.jpg" // make sure this exists in /public/images
+        },
+        { 
+          name: "Nicole", 
+          role: "Senior Attorney", 
+          image: "/images/nicole.jpg" 
+        },
+        { 
+          name: "Nathaniel", 
+          role: "Senior Attorney", 
+          image: "/images/nathaniel.png" 
+        },
+      ].map((attorney, idx) => (
+        <div 
+          key={idx} 
+          className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-shadow"
+        >
+          {/* Image */}
+          <img
+            src={attorney.image}
+            alt={attorney.name}
+            className="w-full h-56 object-cover rounded-md mb-4"
+          />
+
+          {/* Text */}
+          <h3 className="font-semibold text-lg text-gray-800">{attorney.name}</h3>
+          <p className="text-sm text-gray-500">{attorney.role}</p>
         </div>
       ))}
     </div>
   </section>
-)
+);
+
 
 const FeatureSection = () => (
   <section className="py-16 bg-white">
