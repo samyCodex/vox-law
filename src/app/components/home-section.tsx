@@ -6,9 +6,9 @@ const ServicesSection = () => (
     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
       <div>
         <Briefcase size={40} className="mx-auto text-amber-600" />
-        <h3 className="mt-4 font-bold text-lg">Business Law</h3>
+        <h3 className="mt-4 font-bold text-lg">Our Mission</h3>
         <p className="text-gray-600 mt-2">
-          Guiding small & large businesses with legal solutions tailored for success.
+         To provide legal and strategic advisory solutions that go beyond law — combining deep legal expertise with business insight, innovation, and speed — to help our clients build structures that endure, scale, and thrive.
         </p>
       </div>
       <div>
@@ -20,9 +20,9 @@ const ServicesSection = () => (
       </div>
       <div>
         <Scale size={40} className="mx-auto text-amber-600" />
-        <h3 className="mt-4 font-bold text-lg">Dispute Resolution</h3>
+        <h3 className="mt-4 font-bold text-lg">Our Vision</h3>
         <p className="text-gray-600 mt-2">
-          Resolving disputes efficiently with professionalism and expertise.
+          To be Africa’s leading client-centered law firm, known for transforming complex legal, regulatory, and business challenges into opportunities for sustainable growth and long-term success.
         </p>
       </div>
     </div>
@@ -67,10 +67,11 @@ const AttorneysSection = () => (
         >
           {/* Image */}
           <img
-            src={attorney.image}
-            alt={attorney.name}
-            className="w-full h-56 object-cover rounded-md mb-4"
+           src={attorney.image}
+           alt={attorney.name}
+          className="w-full aspect-[3/4] object-cover rounded-md mb-4"
           />
+
 
           {/* Text */}
           <h3 className="font-semibold text-lg text-gray-800">{attorney.name}</h3>
@@ -85,14 +86,21 @@ const AttorneysSection = () => (
 const FeatureSection = () => (
   <section className="py-16 bg-white">
     <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-      <div className="bg-gray-300 h-72 rounded"></div>
+      <div className="bg-gray-300 h-72 rounded">
+       <img
+           src='/images/exe.jpg'
+           alt="legal excellence"
+          className="w-full  object-cover rounded-md mb-4"
+          />
+      </div>
       <div>
         <h2 className="text-2xl font-bold text-gray-800">
           Legal Excellence, Personalized Care
         </h2>
         <p className="mt-4 text-gray-600">
-          Our attorneys provide tailored strategies with client-focused results. 
-          Whether personal or business matters, we stand by you every step of the way.
+         Our client base continues to expand as more organizations entrust us with their legal and strategic needs. 
+         Beyond delivering sound legal advice, we position ourselves as long-term partners; 
+         helping clients anticipate risks, seize opportunities, and structure solutions that support growth and sustainability.
         </p>
         <button className="mt-6 px-6 py-3 bg-amber-600 hover:bg-amber-700 rounded">
           Learn more
@@ -112,7 +120,13 @@ const TestimonialsSection = () => (
           mauris lectus consequat sed. Pretium purus feugiat volutpat."
           <footer className="mt-4 font-semibold">– Irvine Guzman</footer>
         </blockquote>
-        <div className="h-48 bg-gray-300 rounded"></div>
+        <div>
+           <img
+           src='/images/exe.jpg'
+           alt="legal excellence"
+          className="w-full  object-cover rounded-md mb-4"
+          />
+        </div>
       </div>
     </div>
   </section>

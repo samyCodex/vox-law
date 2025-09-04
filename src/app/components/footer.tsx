@@ -14,9 +14,10 @@ const Footer = () => {
             <img src="/logo.svg" alt="Law Firm" className="h-8 w-8" />
             <span className="text-lg font-bold text-white">Law Firm</span>
           </div>
-          <p className="mt-4 text-sm">
-            Adipiscing nam neque hendrerit nec pellentesque diam a. Varius quisque odio
-            mauris lectus consequat sed.
+          <p className="mt-4 text-sm text-jusify">
+          Our client base continues to expand as more organizations entrust us with their legal and strategic needs. 
+          Beyond delivering sound legal advice, we position ourselves as long-term partners; helping clients anticipate risks,   
+          seize opportunities, and structure solutions that support growth and sustainability.
           </p>
           <div className="flex space-x-4 mt-4">
             <Link href="#"><Facebook size={18} className="hover:text-amber-500" /></Link>
@@ -39,12 +40,12 @@ const Footer = () => {
         {/* Find Us */}
         <div>
           <h3 className="text-white font-semibold mb-4">Find Us</h3>
-          <p className="text-sm">43 W. Wellington Road<br/>Fairhope, AL 36532</p>
+          <p className="text-sm">Sabr Plaza, Kachia Road,<br/> Kaduna, Kaduna State</p>
           <p className="mt-2 text-sm flex items-center">
-            <Phone size={16} className="mr-2 text-amber-500" /> (257) 388-6895
+            <Phone size={16} className="mr-2 text-amber-500" /> (+234) 816 948 5151
           </p>
           <p className="mt-2 text-sm flex items-center">
-            <Mail size={16} className="mr-2 text-amber-500" /> temmink@outlook.com
+            <Mail size={16} className="mr-2 text-amber-500" />  voxregis.s.a.p@gmail.com
           </p>
         </div>
 

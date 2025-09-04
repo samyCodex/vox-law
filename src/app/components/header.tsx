@@ -7,10 +7,10 @@ const Header = () => {
   return (
 
  <header>
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div className="max-w-8xl mx-auto flex items-center justify-between px-6 py-4">
         <div className="flex items-center space-x-2">
-          <img src="/logo.svg" alt="Law Firm" className="h-8 w-8" />
-          <span className="font-bold text-lg">Law Firm</span>
+          <img src="/images/logo.png" alt="Law Firm" className="h-8 w-8" />
+          <span className="font-bold text-lg">VOX</span>
         </div>
 
         {/* Navigation */}
@@ -24,7 +24,7 @@ const Header = () => {
         {/* Phone Number */}
         <div className="flex items-center space-x-2 text-sm">
           <Phone size={16} className="text-amber-500" />
-          <span>(257) 388-6895</span>
+          <span>(+234) 816 948 5151</span>
         </div>
       </div>
     </header>
