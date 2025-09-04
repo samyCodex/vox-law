@@ -1,0 +1,8 @@
+/* ✅ scoped inside home.module.css */
+.container ul {
+  list-style: none;
+}
+
+.container video {
+  width: 100%;
+}
