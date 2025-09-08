@@ -2,6 +2,7 @@
 import React from "react"
 import Link from "next/link"
 import { Facebook, Instagram, Twitter, Phone, Mail } from "lucide-react"
+import Image from "next/image"
 
 const Footer = () => {
   return (
@@ -11,7 +12,13 @@ const Footer = () => {
         {/* Brand */}
         <div>
           <div className="flex items-center space-x-2">
-            <img src="/logo.svg" alt="Law Firm" className="h-8 w-8" />
+            <Image
+  src="/images/logo.png"
+  alt="Law Firm"
+  width={32}
+  height={32}
+  className="h-8 w-8"
+/>
             <span className="text-lg font-bold text-white">Law Firm</span>
           </div>
           <p className="mt-4 text-sm text-jusify">

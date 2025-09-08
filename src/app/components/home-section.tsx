@@ -1,5 +1,6 @@
 import React from "react"
-import { Briefcase, FileText, Scale, Users } from "lucide-react"
+import { Briefcase, FileText, Scale } from "lucide-react"
+import Image from "next/image"
 
 const ServicesSection = () => (
   <section className="py-16 bg-white">
@@ -8,7 +9,7 @@ const ServicesSection = () => (
         <Briefcase size={40} className="mx-auto text-amber-600" />
         <h3 className="mt-4 font-bold text-lg">Our Mission</h3>
         <p className="text-gray-600 mt-2">
-         To provide legal and strategic advisory solutions that go beyond law — combining deep legal expertise with business insight, innovation, and speed — to help our clients build structures that endure, scale, and thrive.
+          To provide legal and strategic advisory solutions that go beyond law — combining deep legal expertise with business insight, innovation, and speed — to help our clients build structures that endure, scale, and thrive.
         </p>
       </div>
       <div>
@@ -45,33 +46,19 @@ const AttorneysSection = () => (
     
     <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
       {[
-        { 
-          name: "Ijaiya", 
-          role: "Senior Attorney", 
-          image: "/images/ijaiya.jpg" // make sure this exists in /public/images
-        },
-        { 
-          name: "Nicole", 
-          role: "Senior Attorney", 
-          image: "/images/nicole.jpg" 
-        },
-        { 
-          name: "Nathaniel", 
-          role: "Senior Attorney", 
-          image: "/images/nathaniel.png" 
-        },
+        { name: "Ijaiya", role: "Senior Attorney", image: "/images/ijaiya.jpg" },
+        { name: "Nicole", role: "Senior Attorney", image: "/images/nicole.jpg" },
+        { name: "Nathaniel", role: "Senior Attorney", image: "/images/nathaniel.png" },
       ].map((attorney, idx) => (
-        <div 
-          key={idx} 
-          className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-shadow"
-        >
+        <div key={idx} className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-shadow">
           {/* Image */}
-          <img
-           src={attorney.image}
-           alt={attorney.name}
-          className="w-full aspect-[3/4] object-cover rounded-md mb-4"
+          <Image
+            src={attorney.image}
+            alt={attorney.name}
+            width={400}   // ✅ Added width
+            height={500}  // ✅ Added height
+            className="w-full aspect-[3/4] object-cover rounded-md mb-4"
           />
-
 
           {/* Text */}
           <h3 className="font-semibold text-lg text-gray-800">{attorney.name}</h3>
@@ -80,27 +67,26 @@ const AttorneysSection = () => (
       ))}
     </div>
   </section>
-);
-
+)
 
 const FeatureSection = () => (
   <section className="py-16 bg-white">
     <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
       <div className="bg-gray-300 h-72 rounded">
-       <img
-           src='/images/exe.jpg'
-           alt="legal excellence"
-          className="w-full  object-cover rounded-md mb-4"
-          />
+        <Image
+          src="/images/exe.jpg"
+          alt="legal excellence"
+          width={600}   // ✅ Added width
+          height={400}  // ✅ Added height
+          className="w-full object-cover rounded-md mb-4"
+        />
       </div>
       <div>
-        <h2 className="text-2xl font-bold text-gray-800">
-          Legal Excellence, Personalized Care
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-800">Legal Excellence, Personalized Care</h2>
         <p className="mt-4 text-gray-600">
-         Our client base continues to expand as more organizations entrust us with their legal and strategic needs. 
-         Beyond delivering sound legal advice, we position ourselves as long-term partners; 
-         helping clients anticipate risks, seize opportunities, and structure solutions that support growth and sustainability.
+          Our client base continues to expand as more organizations entrust us with their legal and strategic needs. 
+          Beyond delivering sound legal advice, we position ourselves as long-term partners; 
+          helping clients anticipate risks, seize opportunities, and structure solutions that support growth and sustainability.
         </p>
         <button className="mt-6 px-6 py-3 bg-amber-600 hover:bg-amber-700 rounded">
           Learn more
@@ -116,15 +102,17 @@ const TestimonialsSection = () => (
       <h2 className="text-2xl font-bold text-gray-800">What Our Client Says</h2>
       <div className="mt-10 grid md:grid-cols-2 gap-10 items-center">
         <blockquote className="text-gray-600 text-lg italic">
-          "Adipiscing nam neque hendrerit nec pellentesque diam a. Varius quisque odio 
-          mauris lectus consequat sed. Pretium purus feugiat volutpat."
+          &quot;Adipiscing nam neque hendrerit nec pellentesque diam a. Varius quisque odio 
+          mauris lectus consequat sed. Pretium purus feugiat volutpat.&quot;
           <footer className="mt-4 font-semibold">– Irvine Guzman</footer>
         </blockquote>
         <div>
-           <img
-           src='/images/exe.jpg'
-           alt="legal excellence"
-          className="w-full  object-cover rounded-md mb-4"
+          <Image
+            src="/images/exe.jpg"
+            alt="legal excellence"
+            width={600}   // ✅ Fixed
+            height={400}  // ✅ Fixed
+            className="w-full object-cover rounded-md mb-4"
           />
         </div>
       </div>
@@ -190,4 +178,3 @@ const HomePageSection = () => {
 }
 
 export default HomePageSection
-

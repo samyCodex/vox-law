@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 const TrustedSection = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -22,13 +23,20 @@ Since our registration, we have steadily grown in scope and capability. Our team
         <div className="md:w-2/3">
           <h2 className="text-2xl font-bold text-gray-800">OUR STORY</h2>
 
-          <p className="mt-4 text-gray-600 text-justify">
-            {isExpanded ? fullText : shortText}
-          </p>
+          {/* Animated Text */}
+          <div
+            className={`mt-4 text-gray-600 text-justify overflow-hidden transition-all duration-500 ${
+              isExpanded ? "max-h-[2000px]" : "max-h-40"
+            }`}
+          >
+            <p className="whitespace-pre-line">
+              {isExpanded ? fullText : shortText}
+            </p>
+          </div>
 
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="mt-2 text-blue-600 hover:underline"
+            className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-700 transition"
           >
             {isExpanded ? "Read Less" : "Read More"}
           </button>
@@ -40,13 +48,16 @@ Since our registration, we have steadily grown in scope and capability. Our team
 
         {/* Right Image */}
         <div className="mt-6 md:mt-0 md:ml-8 md:w-1/3">
-          <div className="relative">
-            <img 
+          <div
+            className={`relative w-full transition-all duration-500 ${
+              isExpanded ? "h-[32rem]" : "h-56"
+            }`}
+          >
+            <Image 
               src="/images/ourStory.jpg" 
               alt="Julio Jefferson" 
-              className={`w-full object-cover rounded-md transition-all duration-500 ${
-                isExpanded ? "h-[32rem]" : "h-56"
-              }`}
+              fill
+              className="object-cover rounded-md"
             />
           </div>
         </div>
