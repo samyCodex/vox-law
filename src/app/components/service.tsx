@@ -15,18 +15,20 @@ import {
   Layers,
   Trophy,
 } from "lucide-react"
-import { motion } from "framer-motion"
+import { motion, Variants} from "framer-motion"
 import React from "react"
-
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
-  show: (i: number) => ({
+  show: (i: number = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.15, duration: 0.6, ease: [0.42, 0, 0.58, 1] }, // cubic-bezier for easeOut
+    transition: {
+      delay: i * 0.15,
+      duration: 0.6,
+      ease: [0.42, 0, 0.58, 1], // easeOut cubic-bezier
+    },
   }),
-} as any
-
+};
 const ServicesPage = () => {
   return (
     <main className="bg-gray-50">
