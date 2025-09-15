@@ -70,7 +70,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 mt-12 py-4 text-center text-sm text-gray-500">
-        © Copyright Vox {new Date().getFullYear()}. Design by Figma.guru
+        © Copyright Vox {new Date().getFullYear()}.
       </div>
     </footer>
   )
