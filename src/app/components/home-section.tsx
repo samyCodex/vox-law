@@ -1,34 +1,93 @@
-import React from "react"
-import { Briefcase, FileText, Scale } from "lucide-react"
-import Image from "next/image"
+"use client";
+import React from "react";
+import { Briefcase, FileText, Scale, Shield, Award, Users, Zap, Lightbulb, Handshake, Globe } from "lucide-react";
+import Image from "next/image";
+import { motion } from "framer-motion"; // ✅ Animation
 
+/* ==================== SERVICES ==================== */
 const ServicesSection = () => (
   <section className="py-16 bg-white">
     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="p-4"
+      >
         <Briefcase size={40} className="mx-auto text-amber-600" />
         <h3 className="mt-4 font-bold text-lg">Our Mission</h3>
         <p className="text-gray-600 mt-2">
           To provide legal and strategic advisory solutions that go beyond law — combining deep legal expertise with business insight, innovation, and speed — to help our clients build structures that endure, scale, and thrive.
         </p>
-      </div>
-      <div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="p-4"
+      >
         <FileText size={40} className="mx-auto text-amber-600" />
         <h3 className="mt-4 font-bold text-lg">Contract Law</h3>
         <p className="text-gray-600 mt-2">
           Drafting, reviewing, and negotiating strong contracts for your peace of mind.
         </p>
-      </div>
-      <div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        className="p-4"
+      >
         <Scale size={40} className="mx-auto text-amber-600" />
         <h3 className="mt-4 font-bold text-lg">Our Vision</h3>
         <p className="text-gray-600 mt-2">
           To be Africa’s leading client-centered law firm, known for transforming complex legal, regulatory, and business challenges into opportunities for sustainable growth and long-term success.
         </p>
-      </div>
+      </motion.div>
     </div>
   </section>
-)
+);
+
+/* ==================== CORE VALUES ==================== */
+const CoreValuesSection = () => {
+  const values = [
+    { icon: Shield, title: "Integrity", text: "We uphold the highest ethical standards, ensuring trust, transparency, and accountability in all our dealings." },
+    { icon: Award, title: "Excellence", text: "We deliver rigorous, precise, and innovative legal solutions tailored to the unique needs of our clients." },
+    { icon: Users, title: "Client-Centricity", text: "Our clients’ success defines ours. We listen, anticipate, and design solutions that advance their business goals." },
+    { icon: Zap, title: "Speed & Agility", text: "We move with urgency and precision, delivering solutions at the pace of business." },
+    { icon: Lightbulb, title: "Innovation", text: "We embrace forward-thinking approaches, leveraging technology and multidisciplinary insights to deliver results beyond conventional law practice." },
+    { icon: Handshake, title: "Collaboration", text: "We partner with our clients and stakeholders, fostering relationships that enable shared growth and long-term impact." },
+    { icon: Globe, title: "Impact", text: "We measure our success not just by transactions closed, but by the lasting value we create for businesses, institutions, and society." },
+  ];
+
+  return (
+    <section className="py-16 bg-gray-50">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-2xl font-bold text-gray-800">Our Core Values</h2>
+        <p className="text-gray-600 mt-2">The principles that guide everything we do.</p>
+
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+          {values.map((val, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: idx * 0.2 }}
+              viewport={{ once: true }}
+              className="p-6 bg-white rounded-lg shadow hover:shadow-md transition"
+            >
+              <val.icon size={40} className="text-amber-600 mb-4" />
+              <h3 className="font-semibold text-lg text-gray-800">{val.title}</h3>
+              <p className="text-gray-600 mt-2 text-sm">{val.text}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 const CTASection = () => (
   <section className="bg-gradient-to-r from-black to-gray-900 text-center py-12 text-white">
@@ -41,7 +100,7 @@ const CTASection = () => (
 
 const AttorneysSection = () => (
   <section className="py-16 bg-gray-50 text-center">
-    <h2 className="text-2xl font-bold text-gray-800">Our Attorneys</h2>
+    <h2 className="text-2xl font-bold text-gray-800">Our Team</h2>
     <p className="text-gray-600 mt-2">Meet our experienced and dedicated legal team.</p>
     
     <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -167,6 +226,7 @@ const HomePageSection = () => {
   return (
     <>
       <ServicesSection />
+      <CoreValuesSection />
       <CTASection />
       <AttorneysSection />
       <FeatureSection />

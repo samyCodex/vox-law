@@ -17,9 +17,9 @@ const Footer = () => {
   alt="Law Firm"
   width={32}
   height={32}
-  className="h-8 w-8"
+  className="h-20 w-20 object-contain"
 />
-            <span className="text-lg font-bold text-white">Law Firm</span>
+            <span className="text-lg font-bold text-white">VOX</span>
           </div>
           <p className="mt-4 text-sm text-jusify">
           Our client base continues to expand as more organizations entrust us with their legal and strategic needs. 
@@ -70,7 +70,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 mt-12 py-4 text-center text-sm text-gray-500">
-        © Copyright Law Firm {new Date().getFullYear()}. Design by Figma.guru
+        © Copyright Vox {new Date().getFullYear()}. Design by Figma.guru
       </div>
     </footer>
   )

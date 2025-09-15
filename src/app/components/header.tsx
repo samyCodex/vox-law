@@ -14,7 +14,7 @@ const Header = () => {
             alt="Law Firm" 
             width={32}   // ✅ Added width
             height={32}  // ✅ Added height
-            className="h-8 w-8 object-contain"
+            className="h-20 w-20 object-contain"
             priority     // ✅ Load fast since it’s always visible
           />
           <span className="font-bold text-lg">VOX</span>
