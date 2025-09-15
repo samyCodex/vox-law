@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <div>
             <Header />
-    <div className="bg-black text-white">
+    <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white">
     <HeroSection />
     <TrustedSection />
     </div>
