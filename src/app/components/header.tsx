@@ -41,7 +41,7 @@ const Header = () => {
         {/* Mobile Hamburger */}
         <button
           className="md:hidden flex items-center"
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => setMenuOpen(!menuOpen)} 
         >
           {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
