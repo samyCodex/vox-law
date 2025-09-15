@@ -107,8 +107,8 @@ const AttorneysSection = () => (
       {[
         { name: "Maximillian Ezeude", role: "Managing Partner", image: "/images/maximillian.jpg" },
         { name: "Eugene Divine Izu, LLM", role: "Associate", image: "/images/aximillian.jpg" },
-        { name: "Adefolajuwon Ijaiya", role: "Associate", image: "/images/ijaiya.jpg" },
-        { name: "Onyinye Nicole", role: "Associate", image: "/images/nicole.jpg" },
+        { name: "Adefolajuwon Ijaiya", role: "Corporate Governance & Investment", image: "/images/ijaiya.jpg" },
+        { name: "Onyinye Nicole", role: "Legal & Strategy Advisor", image: "/images/nicole.jpg" },
         { name: "Nathaniel Handan ", role: "Technology & Innovation Advisor", image: "/images/nathaniel.png" },
       ].map((attorney, idx) => (
         <div key={idx} className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-shadow">

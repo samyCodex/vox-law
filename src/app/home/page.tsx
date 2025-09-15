@@ -9,8 +9,8 @@ import HomePageSection from '../components/home-section'
 const HomePage = () => {
   return (
     <div>
-          <div className="bg-black text-white">
-      <Header />
+            <Header />
+    <div className="bg-black text-white">
     <HeroSection />
     <TrustedSection />
     </div>

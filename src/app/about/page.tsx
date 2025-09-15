@@ -6,8 +6,9 @@ import Footer from '../components/footer'
 const AboutUs = () => {
   return (
     <div>
+             <Header />
     <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white">
-       <Header />
+
        <AboutUsPage />
     </div>
     <Footer />

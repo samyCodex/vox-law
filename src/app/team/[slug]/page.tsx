@@ -17,8 +17,8 @@ export default function AttorneyProfile({ params }: Props) {
 
   return (
     <div>
-  <div className="bg-black text-white">
     <Header />
+  <div className="bg-black text-white">
    </div>
     <section className="max-w-4xl mx-auto py-16 px-6">
       <div className="bg-white shadow-lg rounded-lg p-8">
