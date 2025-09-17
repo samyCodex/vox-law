@@ -106,7 +106,7 @@ const AttorneysSection = () => (
     <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
       {[
         { name: "Maximillian Ezeude", role: "Managing Partner", image: "/images/maximillian.jpg" },
-        { name: "Eugene Divine Izu, LLM", role: "Head of Litigation", image: "/images/aximillian.jpg" },
+        { name: "Eugene Divine Izu, LLM", role: "Head of Litigation", image: "/images/eugene.jpg" },
         { name: "Adefolajuwon Ijaiya", role: "Heaad of Compliance", image: "/images/ijaiya.jpg" },
         { name: "Onyinye Nicole", role: "Head of Strategy", image: "/images/nicole.jpg" },
         { name: "Nathaniel Handan ", role: "Head of Tech/Innovation", image: "/images/nathaniel.png" },
@@ -122,7 +122,7 @@ const AttorneysSection = () => (
           />
 
           {/* Text */}
-          <h3 className="font-semibold text-lg text-gray-800">{attorney.name}</h3>
+          <h3 className="font-semibold text-lg text-gray-800">{attorney.name}</h3> 
           <p className="text-sm text-gray-500">{attorney.role}</p>
         </div>
       ))}
