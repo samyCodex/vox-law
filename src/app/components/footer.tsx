@@ -19,7 +19,7 @@ const Footer = () => {
   height={32}
   className="h-20 w-20 object-contain"
 />
-            <span className="text-lg font-bold text-white">VOX</span>
+            {/* <span className="text-lg font-bold text-white">VOX</span> */}
           </div>
           <p className="mt-4 text-sm text-jusify">
           Our client base continues to expand as more organizations entrust us with their legal and strategic needs. 
@@ -42,7 +42,7 @@ const Footer = () => {
             <li><Link href="/about" className="hover:text-amber-500">About Us</Link></li>
             <li><Link href="/contact" className="hover:text-amber-500">Contact Us</Link></li>
           </ul>
-        </div>
+        </div> 
 
         {/* Find Us */}
         <div>
@@ -60,10 +60,16 @@ const Footer = () => {
         <div>
           <h3 className="text-white font-semibold mb-4">Practice Areas</h3>
           <ul className="space-y-2 text-sm">
-            <li>Banking and Finance</li>
-            <li>Business Law</li>
-            <li>Real Estate</li>
-            <li>Family Law</li>
+            <li>Corporate & Commercial Law</li>
+            <li>Corporate Governance & Compliance</li>
+            <li>Litigation & Dispute Resolution</li>
+            <li>Banking, Finance & Capital Markets</li>
+            <li>Real Estate & Infrastructure</li>
+            <li>Technology, Media & Telecommunications</li>
+            <li>Intellectual Property</li>
+            <li>Regulatory Advisory</li>
+            <li>Employment & Labour Law</li>
+            <li>Public Sector & Development Advisory</li>
           </ul>
         </div>
       </div>

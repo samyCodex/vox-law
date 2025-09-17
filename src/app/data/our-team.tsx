@@ -15,7 +15,7 @@ He is driven by a simple philosophy: the law should not be a barrier but a bridg
   {
     slug: "eugene-divine-izu",
     name: "Eugene Divine Izu, LLM",
-    role: "Associate",
+    role: "Head of Litigation",
     image: "/images/eugene.jpg",
     shortBio: "Specialist in litigation, dispute resolution, employment disputes, and commercial conflicts.",
     fullBio: `Eugene Divine Izu is an Associate at VOX REGIS SOLICITORS, ASSOCIATES AND PARTNERS, with a strong focus on litigation and dispute resolution. Called to the Nigerian Bar in 2019 after obtaining his LL.B from Ambrose Alli University, Ekpoma, Eugene has developed a reputation for his courtroom advocacy, strategic case management, and meticulous legal research.
@@ -27,7 +27,7 @@ Eugene’s versatility across both litigation and advisory work makes him a key 
   {
     slug: "nathaniel-handan",
     name: "Nathaniel Handan",
-    role: "Tech & Innovation Advisor",
+    role: "Head of Tech/Innovation",
     image: "/images/nathaniel.png",
     shortBio: "AI & Machine Learning engineer integrating legal-tech, compliance, and cybersecurity into the firm.",
     fullBio: `Nathaniel Handan is a senior AI and Machine Learning Engineer, and serves as the Technology & Innovation Advisor at VOX REGIS. Nathaniel brings a cutting-edge perspective to the firm’s multidisciplinary approach, ensuring that technology is fully integrated into the delivery of legal and advisory services.
@@ -39,7 +39,7 @@ An AWS Community Builder and active community leader, Nathaniel has mentored asp
   {
     slug: "onyinye-nicole",
     name: "Onyinye Nicole",
-    role: "Legal & Strategy Advisor",
+    role: "Head of Strategy",
     image: "/images/nicole.jpg",
     shortBio: "9+ years bridging law, strategy, and execution across financial services, FMCG, and tech.",
     fullBio: `Onyinye Nicole brings over nine years of experience at the intersection of law, strategy, and business execution, positioning her as a key driver of Vox Regis’s mission to deliver solutions that go beyond legal advisory.
@@ -50,7 +50,7 @@ Her blend of legal, regulatory, governance, and execution expertise enables her 
   {
     slug: "adefolajuwon-ijaiya",
     name: "Adefolajuwon Ijaiya",
-    role: "Corporate Governance & Investment",
+    role: "Head of Compliance",
     image: "/images/ijaiya.jpg",
     shortBio: "Expert in governance, equity, and corporate structuring across Sub-Saharan Africa.",
     fullBio: `Adefolajuwon Ijaiya brings over six years of experience at the intersection of law, investment, and corporate governance, advising on structuring, compliance, and growth strategies across Sub-Saharan Africa.

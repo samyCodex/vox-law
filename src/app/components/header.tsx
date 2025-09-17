@@ -15,13 +15,13 @@ const Header = () => {
         <div className="flex items-center space-x-2">
           <Image
             src="/images/logo.png"
-            alt="Law Firm"
+            alt="VOX"
             width={32}
             height={32}
             className="h-12 w-12 object-contain"
             priority
           />
-          <span className="font-bold text-lg">VOX</span>
+          {/* <span className="font-bold text-lg">VOX</span> */}
         </div>
 
         {/* Desktop Navigation */}

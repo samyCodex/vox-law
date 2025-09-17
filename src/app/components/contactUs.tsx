@@ -20,25 +20,17 @@ const ContactUsPage = () => {
           <div className="mt-8 space-y-6">
             <div>
               <p className="font-semibold">📞 Phone Numbers</p>
-              <p className="text-gray-300">(237) 388-6895</p>
-              <p className="text-gray-300">(237) 388-6896</p>
+              <p className="text-gray-300">(+234) 816 948 5151</p>
             </div>
 
             <div>
               <p className="font-semibold">📍 Physical Address</p>
-              <p className="text-gray-300">43 W. Wellington Road, Fairhope, AL 36532</p>
+              <p className="text-gray-300">Sabr Plaza, Kachia Road, Kaduna, Kaduna State</p>
             </div>
 
             <div>
               <p className="font-semibold">📧 Email Address</p>
-              <p className="text-gray-300">texmini@outlook.com</p>
-              <p className="text-gray-300">mail.tmax@gram.com</p>
-            </div>
-
-            <div>
-              <p className="font-semibold">⏰ Opening Hours</p>
-              <p className="text-gray-300">Mon-Fri: 08:00 AM - 08:00 PM</p>
-              <p className="text-gray-300">Sat-Sun: 10:00 AM - 02:00 PM</p>
+              <p className="text-gray-300">voxregis.s.a.p@gmail.com</p>
             </div>
           </div>
         </div>

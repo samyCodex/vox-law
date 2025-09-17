@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-b from-black to-gray-900 text-center text-white py-24">
+    <section className="bg-gradient-to-r from-gray-900 to-gray-800 text-center text-white py-24">
       <h1 className="text-3xl md:text-5xl font-bold leading-tight">
         VOX REGIS SOLICITORS, ASSOCIATES  AND <br /> PARTNERS
       </h1>
