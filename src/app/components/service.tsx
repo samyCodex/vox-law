@@ -17,6 +17,7 @@ import {
 } from "lucide-react"
 import { motion, Variants} from "framer-motion"
 import React from "react"
+import Link from "next/link";
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   show: (i: number = 0) => ({
@@ -97,7 +98,7 @@ const ServicesPage = () => {
           whileHover={{ scale: 1.05 }}
           className="mt-4 md:mt-0 bg-white text-gray-900 px-6 py-3 rounded-md hover:bg-gray-200 transition"
         >
-          Ask an expert
+        <Link href="/contact">Ask an expert</Link>
         </motion.button>
       </motion.section>
 

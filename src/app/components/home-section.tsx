@@ -4,6 +4,7 @@ import { Briefcase, FileText, Scale, Shield, Award, Users, Zap, Lightbulb, Hands
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion"; // ✅ Animation
 import { useEffect, useState } from "react"
+import Link from "next/link";
 
 const testimonials = [
   {
@@ -112,7 +113,7 @@ const CTASection = () => (
   <section className="bg-gradient-to-r from-black to-gray-900 text-center py-12 text-white">
     <h2 className="text-2xl font-bold">Have Legal Questions? Ask Our Experts!</h2>
     <button className="mt-6 px-6 py-3 bg-yellow-600 hover:bg-amber-700 rounded">
-      Ask an Expert
+     <Link href="/contact"> Ask an Expert</Link>
     </button>
   </section>
 )
