@@ -109,10 +109,10 @@ const AboutUsPage = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
             {[
-              { value: "1200+", label: "Cases Won" },
+              { value: "100+", label: "Cases Won" },
               { value: "98%", label: "Client Satisfaction" },
-              { value: "32", label: "Expert Attorneys" },
-              { value: "1800", label: "Happy Clients" },
+              { value: "10", label: "Expert Attorneys" },
+              { value: "100+", label: "Happy Clients" },
             ].map((stat, idx) => (
               <motion.div
                 key={idx}

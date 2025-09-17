@@ -2,8 +2,23 @@
 import React from "react";
 import { Briefcase, FileText, Scale, Shield, Award, Users, Zap, Lightbulb, Handshake, Globe } from "lucide-react";
 import Image from "next/image";
-import { motion } from "framer-motion"; // ✅ Animation
+import { AnimatePresence, motion } from "framer-motion"; // ✅ Animation
+import { useEffect, useState } from "react"
 
+const testimonials = [
+  {
+    text: "Adipiscing nam neque hendrerit nec pellentesque diam a. Varius quisque odio mauris lectus consequat sed. Pretium purus feugiat volutpat.",
+    author: "– Irvine Guzman",
+  },
+  {
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus.",
+    author: "– Maria Lopez",
+  },
+  {
+    text: "Suspendisse potenti. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem.",
+    author: "– John Doe",
+  },
+]
 /* ==================== SERVICES ==================== */
 const ServicesSection = () => (
   <section className="py-16 bg-white">
@@ -92,7 +107,7 @@ const CoreValuesSection = () => {
 const CTASection = () => (
   <section className="bg-gradient-to-r from-black to-gray-900 text-center py-12 text-white">
     <h2 className="text-2xl font-bold">Have Legal Questions? Ask Our Experts!</h2>
-    <button className="mt-6 px-6 py-3 bg-amber-600 hover:bg-amber-700 rounded">
+    <button className="mt-6 px-6 py-3 bg-yellow-600 hover:bg-amber-700 rounded">
       Ask an Expert
     </button>
   </section>
@@ -115,9 +130,9 @@ const AttorneysSection = () => (
           {/* Image */}
           <Image
             src={attorney.image}
-            alt={attorney.name}
-            width={400}   // ✅ Added width
-            height={500}  // ✅ Added height
+            alt={attorney.name} 
+            width={400}  
+            height={500}  
             className="w-full aspect-[3/4] object-cover rounded-md mb-4"
           />
 
@@ -149,37 +164,50 @@ const FeatureSection = () => (
           Beyond delivering sound legal advice, we position ourselves as long-term partners; 
           helping clients anticipate risks, seize opportunities, and structure solutions that support growth and sustainability.
         </p>
-        <button className="mt-6 px-6 py-3 bg-amber-600 hover:bg-amber-700 rounded">
-          Learn more
-        </button>
       </div>
     </div>
   </section>
 )
 
-const TestimonialsSection = () => (
-  <section className="py-16 bg-gray-50">
-    <div className="max-w-6xl mx-auto text-center">
-      <h2 className="text-2xl font-bold text-gray-800">What Our Client Says</h2>
-      <div className="mt-10 grid md:grid-cols-2 gap-10 items-center">
-        <blockquote className="text-gray-600 text-lg italic">
-          &quot;Adipiscing nam neque hendrerit nec pellentesque diam a. Varius quisque odio 
-          mauris lectus consequat sed. Pretium purus feugiat volutpat.&quot;
-          <footer className="mt-4 font-semibold">– Irvine Guzman</footer>
-        </blockquote>
-        <div>
-          <Image
-            src="/images/exe.jpg"
-            alt="legal excellence"
-            width={600}   // ✅ Fixed
-            height={400}  // ✅ Fixed
-            className="w-full object-cover rounded-md mb-4"
-          />
+const TestimonialsSection = () => {
+  const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % testimonials.length)
+    }, 5000) // ⏳ change every 5 seconds
+    return () => clearInterval(interval)
+  }, [])
+
+  return (
+    <section className="py-16 bg-gray-50">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-2xl font-bold text-gray-800">
+          What Our Client Says
+        </h2>
+
+        <div className="mt-10 h-40 flex items-center justify-center">
+          <AnimatePresence mode="wait">
+            <motion.blockquote
+              key={index}
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 50 }}
+              transition={{ duration: 0.6 }}
+              className="text-gray-600 text-lg italic"
+            >
+              &quot;{testimonials[index].text}&quot;
+              <footer className="mt-4 font-semibold">
+                {testimonials[index].author}
+              </footer>
+            </motion.blockquote>
+          </AnimatePresence>
         </div>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
+}
+
 
 const ConsultationFormSection = () => (
   <section className="py-16 bg-gradient-to-r from-black to-gray-900 text-white">

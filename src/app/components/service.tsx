@@ -59,13 +59,12 @@ const ServicesPage = () => {
             with modern strategies to deliver practical and effective results.
           </p>
         </motion.div>
-
         <div className="grid grid-cols-2 gap-6">
           {[
-            { icon: "⚖️", title: "Criminal Law" },
-            { icon: "📑", title: "Business Law" },
-            { icon: "🏛️", title: "Civil Litigation" },
-            { icon: "📜", title: "Family Law" },
+{ icon: "⚖️", title: "Corporate & Commercial Law" },
+{ icon: "📋", title: "Corporate Governance & Compliance" },
+{ icon: "🤝", title: "Client-Centered Practice" },
+{ icon: "💰", title: "Financial Services" },
           ].map((service, idx) => (
             <motion.div
               key={idx}
@@ -347,72 +346,6 @@ const ServicesPage = () => {
                 nec odio. Praesent libero. Sed cursus ante dapibus diam.
               </p>
             </motion.details>
-          ))}
-        </div>
-      </section>
-
-      {/* ================= PRICING ================= */}
-      <section className="max-w-7xl mx-auto py-16 px-6">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-2xl font-bold text-gray-800 text-center"
-        >
-          Choose Your Plan
-        </motion.h2>
-        <div className="mt-10 grid md:grid-cols-3 gap-8">
-          {[
-            {
-              title: "Starter",
-              price: "$99",
-              features: ["1 Consultation", "Basic Legal Advice", "Email Support"],
-            },
-            {
-              title: "Business",
-              price: "$299",
-              features: [
-                "5 Consultations",
-                "Contract Drafting",
-                "Priority Support",
-              ],
-            },
-            {
-              title: "Fixed Plan",
-              price: "$499",
-              features: [
-                "Unlimited Consultations",
-                "Court Representation",
-                "Full Support",
-              ],
-            },
-          ].map((plan, idx) => (
-            <motion.div
-              key={idx}
-              custom={idx}
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true }}
-              className="bg-white shadow-md rounded-lg p-8 text-center"
-            >
-              <h3 className="font-bold text-xl text-gray-800">{plan.title}</h3>
-              <p className="text-3xl font-bold text-yellow-700 mt-4">
-                {plan.price}
-              </p>
-              <ul className="mt-6 space-y-2 text-gray-600 text-sm">
-                {plan.features.map((f, i) => (
-                  <li key={i}>✔ {f}</li>
-                ))}
-              </ul>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                className="mt-6 bg-gray-900 text-white px-6 py-2 rounded-md hover:bg-gray-700 transition"
-              >
-                Choose Plan
-              </motion.button>
-            </motion.div>
           ))}
         </div>
       </section>

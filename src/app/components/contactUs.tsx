@@ -45,10 +45,11 @@ const ContactUsPage = () => {
             <div className="grid grid-cols-2 gap-4">
               <input type="email" placeholder="Your Email" className="w-full p-3 border rounded-md" />
               <select className="bg-black w-full p-3 border rounded-md">
-                <option>Civil Law</option>
-                <option>Criminal Law</option>
-                <option>Family Law</option>
-                <option>Corporate Law</option>
+                <option>Corporate & Commercial Law</option>
+                <option>Corporate Governance & Compliance</option>
+                <option>Litigation & Dispute Resolution</option>
+                <option>Regulatory Advisory</option>
+                <option>Other</option>
               </select>
             </div>
             <input type="text" placeholder="Subject" className="w-full p-3 border rounded-md" />
@@ -66,7 +67,7 @@ const ContactUsPage = () => {
       {/* ==================== MAP ==================== */}
       <section className="relative w-full h-96">
         <Image 
-          src="/images/Map@2x.png" 
+          src="/images/Map@2x.jpg" 
           alt="Map" 
           fill 
           className="object-cover rounded-md"

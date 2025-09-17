@@ -7,7 +7,7 @@ const HeroSection = () => {
       <p className="mt-4 text-gray-300 max-w-xl mx-auto">
         “Your Trusted Legal Partner in Excellence and Integrity”
       </p>
-      <button className="mt-8 px-6 py-3 bg-amber-700 hover:bg-amber-800 rounded shadow-md transition">
+      <button className="mt-8 px-6 py-3  bg-yellow-500 hover:bg-amber-800 rounded shadow-md transition">
         Make enquiry
       </button>
     </section>
