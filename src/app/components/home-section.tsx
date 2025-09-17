@@ -7,16 +7,20 @@ import { useEffect, useState } from "react"
 
 const testimonials = [
   {
-    text: "Adipiscing nam neque hendrerit nec pellentesque diam a. Varius quisque odio mauris lectus consequat sed. Pretium purus feugiat volutpat.",
-    author: "– Irvine Guzman",
+    text: "Working with this firm was a life-changing experience. They handled my case with so much professionalism and care.",
+    author: "– Chinedu Okafor",
   },
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus.",
-    author: "– Maria Lopez",
+    text: "I never thought resolving legal issues could be this smooth. Their team explained everything clearly and kept me updated.",
+    author: "– Aisha Bello",
   },
   {
-    text: "Suspendisse potenti. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem.",
-    author: "– John Doe",
+    text: "From the very first consultation, I felt confident and supported. Their service truly exceeded my expectations.",
+    author: "– Tunde Adeyemi",
+  },
+  {
+    text: "They treated me like family, not just a client. I would gladly recommend them to anyone who needs legal help.",
+    author: "– Ngozi Umeh",
   },
 ]
 /* ==================== SERVICES ==================== */
