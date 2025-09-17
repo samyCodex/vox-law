@@ -12,17 +12,20 @@ const Header = () => {
       <div className="max-w-8xl mx-auto flex items-center justify-between px-6 py-4">
         
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <Image
-            src="/images/logo.png"
-            alt="VOX"
-            width={32}
-            height={32}
-            className="h-12 w-12 object-contain"
-            priority
-          />
-          {/* <span className="font-bold text-lg">VOX</span> */}
-        </div>
+<div className="flex items-center space-x-2">
+  <div className="relative h-20 w-20">
+    <Image
+      src="/images/logo.svg"
+      alt="VOX"
+      fill
+      className="object-contain"
+      priority
+    />
+  </div>
+</div>
+
+
+
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8 text-sm font-medium">

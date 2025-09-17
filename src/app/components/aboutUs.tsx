@@ -66,15 +66,16 @@ const AboutUsPage = () => {
       className="bg-gray-50 shadow-md rounded-lg p-6 hover:shadow-xl transition cursor-pointer"
     >
       <Link href={`/team/${attorney.slug}`}>
-        <div className="w-full aspect-[3/4] overflow-hidden rounded-md mb-4">
-          <Image
-            src={attorney.image}
-            alt={attorney.name}
-            width={400}
-            height={500}
-            className="w-full h-full object-cover"
-          />
-        </div>
+<div className="w-full h-64 overflow-hidden rounded-md mb-4">
+  <Image
+    src={attorney.image}
+    alt={attorney.name}
+    width={400}
+    height={500}
+    className="w-full h-full object-cover object-top"
+  />
+</div>
+
         <h3 className="font-semibold text-lg text-gray-800">
           {attorney.name}
         </h3>

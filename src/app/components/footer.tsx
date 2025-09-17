@@ -11,16 +11,17 @@ const Footer = () => {
         
         {/* Brand */}
         <div>
-          <div className="flex items-center space-x-2">
-            <Image
-  src="/images/logo.png"
-  alt="Law Firm"
-  width={32}
-  height={32}
-  className="h-20 w-20 object-contain"
-/>
-            {/* <span className="text-lg font-bold text-white">VOX</span> */}
-          </div>
+      <div className="flex items-center space-x-2">
+        <div className="relative h-20 w-20">
+          <Image
+            src="/images/logo.svg"
+            alt="VOX"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+      </div>
           <p className="mt-4 text-sm text-jusify">
           Our client base continues to expand as more organizations entrust us with their legal and strategic needs. 
           Beyond delivering sound legal advice, we position ourselves as long-term partners; helping clients anticipate risks,   
