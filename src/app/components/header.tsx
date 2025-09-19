@@ -37,7 +37,7 @@ const Header = () => {
 
         {/* Phone Number (hidden on mobile) */}
         <div className="hidden md:flex items-center space-x-2 text-sm">
-          <Phone size={16} className="text-amber-500" />
+          <Phone size={16} className="text-yellow-500" />
           <span>(+234) 816 948 5151</span>
         </div>
 

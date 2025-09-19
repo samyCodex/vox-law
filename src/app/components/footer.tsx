@@ -28,9 +28,9 @@ const Footer = () => {
           seize opportunities, and structure solutions that support growth and sustainability.
           </p>
           <div className="flex space-x-4 mt-4">
-            <Link href="#"><Facebook size={18} className="hover:text-amber-500" /></Link>
-            <Link href="#"><Twitter size={18} className="hover:text-amber-500" /></Link>
-            <Link href="#"><Instagram size={18} className="hover:text-amber-500" /></Link>
+            <Link href="#"><Facebook size={18} className="hover:text-yellow-500" /></Link>
+            <Link href="#"><Twitter size={18} className="hover:text-yellow-500" /></Link>
+            <Link href="#"><Instagram size={18} className="hover:text-yellow-500" /></Link>
           </div>
         </div>
 
@@ -38,10 +38,10 @@ const Footer = () => {
         <div>
           <h3 className="text-white font-semibold mb-4">Links</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/" className="hover:text-amber-500">Home</Link></li>
-            <li><Link href="/services" className="hover:text-amber-500">Services</Link></li>
-            <li><Link href="/about" className="hover:text-amber-500">About Us</Link></li>
-            <li><Link href="/contact" className="hover:text-amber-500">Contact Us</Link></li>
+            <li><Link href="/" className="hover:text-yellow-500">Home</Link></li>
+            <li><Link href="/services" className="hover:text-yellow-500">Services</Link></li>
+            <li><Link href="/about" className="hover:text-yellow-500">About Us</Link></li>
+            <li><Link href="/contact" className="hover:text-yellow-500">Contact Us</Link></li>
           </ul>
         </div> 
 
@@ -50,10 +50,10 @@ const Footer = () => {
           <h3 className="text-white font-semibold mb-4">Find Us</h3>
           <p className="text-sm">Sabr Plaza, Kachia Road,<br/> Kaduna, Kaduna State</p>
           <p className="mt-2 text-sm flex items-center">
-            <Phone size={16} className="mr-2 text-amber-500" /> (+234) 816 948 5151
+            <Phone size={16} className="mr-2 text-yellow-500" /> (+234) 816 948 5151
           </p>
           <p className="mt-2 text-sm flex items-center">
-            <Mail size={16} className="mr-2 text-amber-500" />  voxregis.s.a.p@gmail.com
+            <Mail size={16} className="mr-2 text-yellow-500" />  voxregis.s.a.p@gmail.com
           </p>
         </div>
 
