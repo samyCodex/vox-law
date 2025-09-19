@@ -54,7 +54,7 @@ Since our registration, we have steadily grown in scope and capability. Our team
             }`}
           >
             <Image 
-              src="/images/ourStori.jpg" 
+              src="/images/ourStori.png" 
               alt="Julio Jefferson" 
               fill
               className="object-cover rounded-md"
