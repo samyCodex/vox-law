@@ -80,7 +80,7 @@ const ContactUsPage = () => {
       </section>
 
       {/* ==================== ASK AN EXPERT ==================== */}
-      <section className="bg-gradient-to-r from-yellow-700 to-yellow-900 text-white py-12 px-6 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto rounded-lg -mt-12 relative z-10">
+      <section className="bg-gradient-to-r from-yellow-600 to-yellow-500 text-white py-12 px-6 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto rounded-lg -mt-12 relative z-10">
         <h2 className="text-xl font-semibold">Have Legal Questions? Ask Our Experts!</h2>
         <button className="mt-4 md:mt-0 bg-white text-gray-900 px-6 py-3 rounded-md hover:bg-gray-200 transition">
           Ask an expert 

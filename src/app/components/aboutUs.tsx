@@ -6,32 +6,32 @@ import Link from "next/link";
 import { attorneys } from "../data/our-team";
 
 
-  const clients = [
-    {
-      name: "GetPayed Technologies – Fintech platform simplifying payments.",
-      icon: Banknote,
-    },
-    {
-      name: "iRecruiters Africa – Talent solutions & HR advisory.",
-      icon: Briefcase,
-    },
-    {
-      name: "Nigerian Exchange Group (NGX Group) – Africa’s foremost market infrastructure.",
-      icon: Building2,
-    },
-    {
-      name: "Softhills Property Development Company – Real estate development.",
-      icon: Home,
-    },
-    {
-      name: "MyKreeb – Proptech startup for housing & rentals.",
-      icon: House,
-    },
-    {
-      name: "EduBanc – Education-focused financial services provider.",
-      icon: GraduationCap,
-    },
-  ];
+ const clients = [
+  {
+    name: "GetPayed Technologies – Fintech platform simplifying payments.",
+    image: "/images/getpayed.jpg",
+  },
+  {
+    name: "iRecruiters Africa – Talent solutions & HR advisory.",
+    image: "/images/irecruit.png",
+  },
+  {
+    name: "Nigerian Exchange Group (NGX Group) – Africa’s foremost market infrastructure.",
+    image: "/images/ngx.png",
+  },
+  {
+    name: "Softhills Property Development Company – Real estate development.",
+    image: "/images/softhill.png",
+  },
+  {
+    name: "MyKreeb – Proptech startup for housing & rentals.",
+    image: "/images/mykreeb.jpg",
+  },
+  {
+    name: "EduBanc – Education-focused financial services provider.",
+    image: "/images/edunabc.png",
+  },
+]
 
 const AboutUsPage = () => {
   return (
@@ -130,32 +130,37 @@ const AboutUsPage = () => {
       </section>
 
       {/* ==================== CLIENTELE ==================== */}
-     <section className="py-16 bg-white px-6">
+   <section className="py-16 bg-white px-6">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-2xl font-bold text-gray-800">Our Clientele</h2>
         <p className="text-gray-600 mt-2">
-          We are privileged to serve a diverse portfolio of clients across industries.
+         At Vox Regis, we are privileged to serve a diverse portfolio of clients cutting across industries, reflecting the breadth of our practice and the depth of our expertise. Our clientele includes forward-thinking startups, established corporates, financial institutions, real estate developers, and technology-driven enterprises.
+          Some of the organizations we have advised include:
         </p>
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-          {clients.map((client, idx) => {
-            const Icon = client.icon;
-            return (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: idx * 0.2 }}
-                viewport={{ once: true }}
-                className="p-5 bg-gray-50 rounded-lg shadow hover:shadow-md transition flex items-start gap-4"
-              >
-                <div className="flex-shrink-0 p-3 bg-blue-100 rounded-full">
-                  <Icon className="w-6 h-6 text-blue-600" />
-                </div>
-                <p className="text-gray-700">{client.name}</p>
-              </motion.div>
-            );
-          })}
+          {clients.map((client, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: idx * 0.2 }}
+              viewport={{ once: true }}
+              className="p-5 bg-gray-50 rounded-lg shadow hover:shadow-md transition flex items-start gap-4"
+            >
+<div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16  rounded-full flex items-center justify-center">
+  <Image
+    src={client.image}
+    alt={client.name}
+    width={64}
+    height={64}
+    className="w-3/4 h-3/4 object-contain"
+  />
+</div>
+
+              <p className="text-gray-700">{client.name}</p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

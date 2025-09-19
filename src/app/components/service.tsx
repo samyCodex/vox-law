@@ -89,7 +89,7 @@ const ServicesPage = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="bg-gradient-to-r from-yellow-700 to-yellow-900 text-white py-12 px-6 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto rounded-lg"
+        className="bg-gradient-to-r from-yellow-600 to-yellow-500 text-white py-12 px-6 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto rounded-lg"
       >
         <h2 className="text-xl font-semibold">
           Have Legal Questions? Ask Our Experts!
@@ -243,7 +243,7 @@ const ServicesPage = () => {
               viewport={{ once: true }}
               className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-shadow flex items-start space-x-4"
             >
-              <industry.icon className="h-8 w-8 text-amber-500 flex-shrink-0" />
+              <industry.icon className="h-8 w-8 text-yellow-500 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold text-lg text-gray-800">
                   {industry.title}
@@ -300,7 +300,7 @@ const ServicesPage = () => {
               viewport={{ once: true }}
               className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-shadow flex items-start space-x-4"
             >
-              <approach.icon className="h-8 w-8 text-amber-500 flex-shrink-0" />
+              <approach.icon className="h-8 w-8 text-yellow-500 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold text-lg text-gray-800">
                   {approach.title}
