@@ -27,32 +27,35 @@ const testimonials = [
 /* ==================== SERVICES ==================== */
 const ServicesSection = () => (
   <section className="py-16 bg-white">
-    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="p-4"
-      >
-        <Briefcase size={40} className="mx-auto text-yellow-500" />
-        <h3 className="mt-4 font-bold text-lg">Our Mission</h3>
-        <p className="text-gray-600 mt-2">
-          To provide legal and strategic advisory solutions that go beyond law — combining deep legal expertise with business insight, innovation, and speed — to help our clients build structures that endure, scale, and thrive.
-        </p>
-      </motion.div>
+    {/* This div serves as the new centered container */}
+    <div className="max-w-3xl mx-auto"> 
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="p-4"
+        >
+          <Briefcase size={40} className="mx-auto text-yellow-500" />
+          <h3 className="mt-4 font-bold text-lg">Our Mission</h3>
+          <p className="text-gray-600 mt-2">
+            To provide legal and strategic advisory solutions that go beyond law — combining deep legal expertise with business insight, innovation, and speed — to help our clients build structures that endure, scale, and thrive.
+          </p>
+        </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.4 }}
-        className="p-4"
-      >
-        <Scale size={40} className="mx-auto text-yellow-500" />
-        <h3 className="mt-4 font-bold text-lg">Our Vision</h3>
-        <p className="text-gray-600 mt-2">
-          To be Africa’s leading client-centered law firm, known for transforming complex legal, regulatory, and business challenges into opportunities for sustainable growth and long-term success.
-        </p>
-      </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="p-4"
+        >
+          <Scale size={40} className="mx-auto text-yellow-500" />
+          <h3 className="mt-4 font-bold text-lg">Our Vision</h3>
+          <p className="text-gray-600 mt-2">
+            To be Africa’s leading client-centered law firm, known for transforming complex legal, regulatory, and business challenges into opportunities for sustainable growth and long-term success.
+          </p>
+        </motion.div>
+      </div>
     </div>
   </section>
 );
