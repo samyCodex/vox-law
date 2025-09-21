@@ -44,19 +44,6 @@ const ServicesSection = () => (
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-        className="p-4"
-      >
-        <FileText size={40} className="mx-auto text-yellow-500" />
-        <h3 className="mt-4 font-bold text-lg">Contract Law</h3>
-        <p className="text-gray-600 mt-2">
-          Drafting, reviewing, and negotiating strong contracts for your peace of mind.
-        </p>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
         className="p-4"
       >
@@ -121,7 +108,7 @@ const CTASection = () => (
 const AttorneysSection = () => (
   <section className="py-16 bg-gray-50 text-center">
     <h2 className="text-2xl font-bold text-gray-800">Our Team</h2>
-    <p className="text-gray-600 mt-2">Meet our experienced and dedicated legal team.</p>
+    <p className="text-gray-600 mt-2">Meet the diverse experts behind our vision</p>
     
     <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
       {[
@@ -155,7 +142,7 @@ const FeatureSection = () => (
     <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
    <div className="h-72 rounded flex items-center justify-center">
   <Image
-    src="/images/exe.gif"
+    src="/images/exe.png"
     alt="legal excellence"
     width={400}
     height={300}

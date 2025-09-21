@@ -52,7 +52,7 @@ const AboutUsPage = () => {
      <section className="py-16 bg-white text-center px-6">
       <h2 className="text-2xl font-bold text-gray-800">Our Team</h2>
       <p className="text-gray-600 mt-2">
-        Meet our experienced and dedicated legal team.
+        Meet the diverse experts behind our vision
       </p>
 
      <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
