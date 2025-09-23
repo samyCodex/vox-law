@@ -115,7 +115,7 @@ const AttorneysSection = () => (
     
     <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
       {[
-        { name: "Maximillian Ezeude", role: "Managing Partner", image: "/images/maximillian.jpg" },
+        { name: "Maximillian Ezeude", role: "Managing Partner", image: "/images/max.png" },
         { name: "Eugene Divine Izu, LLM", role: "Head of Litigation", image: "/images/eugene.jpg" },
         { name: "Adefolajuwon Ijaiya", role: "Heaad of Compliance", image: "/images/ijaiya.jpg" },
         { name: "Onyinye Nicole", role: "Head of Strategy", image: "/images/nicole.jpg" },

@@ -3,7 +3,7 @@ export const attorneys = [
     slug: "maximillian-ezeude",
     name: "Maximillian Ezeude, ICMC, CIArb",
     role: "Managing Partner",
-    image: "/images/maximillian.jpg",
+    image: "/images/max.png",
     shortBio: "Corporate & Commercial Law, ADR, Compliance, and Governance expert with over 7 years of experience.",
     fullBio: `Maximillian Ezeude is the Managing Partner of VOX REGIS SOLICITORS, ASSOCIATES AND PARTNERS. With over seven years of post-call experience, he has established himself as a trusted advisor in Corporate and Commercial Law, Alternative Dispute Resolution (ADR), Compliance, and Corporate Governance.
 Over the course of his career, Maximillian has advised over 300 corporates, startups, investors, and institutions on a wide range of transactions and regulatory matters. His work spans company structuring, contract negotiation, shareholder arrangements, and cross-border commercial engagements. He is particularly known for his ability to deliver clear, business-focused legal solutions that balance legal precision with commercial practicality.
