@@ -116,10 +116,10 @@ const AttorneysSection = () => (
     <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
       {[
         { name: "Maximillian Ezeude", role: "Managing Partner", image: "/images/max.png" },
-        { name: "Eugene Divine Izu, LLM", role: "Head of Litigation", image: "/images/eugene.jpg" },
-        { name: "Adefolajuwon Ijaiya", role: "Heaad of Compliance", image: "/images/ijaiya.jpg" },
-        { name: "Onyinye Nicole", role: "Head of Strategy", image: "/images/nicole.jpg" },
-        { name: "Nathaniel Handan ", role: "Head of Tech/Innovation", image: "/images/nathaniel.png" },
+        { name: "Eugene Divine Izu, LLM", role: " Litigation", image: "/images/eugene.jpg" },
+        { name: "Adefolajuwon Ijaiya", role: "Compliance Partner", image: "/images/ijaiya.jpg" },
+        { name: "Onyinye Nicole", role: " Strategy Partner", image: "/images/nicole.jpg" },
+        { name: "Nathaniel Handan ", role: " Tech/Innovation Partner", image: "/images/nathaniel.png" },
       ].map((attorney, idx) => (
         <div key={idx} className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-shadow">
           {/* Image */}
